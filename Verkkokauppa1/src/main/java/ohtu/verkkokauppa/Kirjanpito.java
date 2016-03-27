@@ -3,16 +3,7 @@ package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
 
-public class Kirjanpito {
-    private static Kirjanpito instance;
-    
-    public static Kirjanpito getInstance() {
-        if ( instance==null) {
-            instance = new Kirjanpito();
-        }
-        
-        return instance;
-    }
+public class Kirjanpito implements KirjanpitoInt {
     
     private ArrayList<String> tapahtumat;
 
