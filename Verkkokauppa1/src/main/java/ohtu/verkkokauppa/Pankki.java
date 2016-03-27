@@ -1,10 +1,10 @@
 package ohtu.verkkokauppa;
 
-public class Pankki {
+public class Pankki implements PankkiInt {
 
-    private static Pankki instanssi;
+    private static PankkiInt instanssi;
 
-    public static Pankki getInstance() {
+    public static PankkiInt getInstance() {
         if (instanssi == null) {
             instanssi = new Pankki();
         }

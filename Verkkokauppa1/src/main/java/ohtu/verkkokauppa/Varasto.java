@@ -2,11 +2,11 @@ package ohtu.verkkokauppa;
 
 import java.util.*;
 
-public class Varasto {
+public class Varasto implements VarastoInt {
 
-    private static Varasto instanssi;
+    private static VarastoInt instanssi;
 
-    public static Varasto getInstance() {
+    public static VarastoInt getInstance() {
         if (instanssi == null) {
             instanssi = new Varasto();
         }
